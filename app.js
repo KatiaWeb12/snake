@@ -1,4 +1,6 @@
 let color = document.querySelectorAll(".color");
+let buttonContinue = document.querySelector(".end button");
+let imgContinue = document.querySelector(".end img");
 let colorList = [
   "rgb(251, 253, 110)",
   "rgb(199, 3, 78)",
@@ -21,4 +23,10 @@ color.forEach((el, index) => {
     });
     el.style.border = "3px solid white";
   });
+});
+buttonContinue.addEventListener("mouseover", () => {
+  imgContinue.src = "image/againHover.png";
+});
+buttonContinue.addEventListener("mouseout", () => {
+  imgContinue.src = "image/again.png";
 });

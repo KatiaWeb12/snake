@@ -55,19 +55,25 @@
       <button>Start Game</button>
     </section>
     <section class="game">
-      <p class="level">Level <span>15</span></p>
+      <p class="level gameL">Level <span>15</span></p>
       <div class="params">
-        <p class="score">Score: <span></span></p>
-        <p class="timeLimit"><span>30</span>sec</p>
+        <p class="score">Score: <span>9</span></p>
       </div>
+      <canvas></canvas>
     </section>
     <section class="end">
-      <p>Game over</p>
-      <p class="levelEnd">Your level</p>
-      <p class="newRecord">New record!</p>
-      <p class="scoreOver">Your score: <span>20</span></p>
-      <p class="record">Your record score now: <span></span></p>
-      <button>Continue <img src="" alt="" /></button>
+      <div class="info">
+        <div class="endNews">
+          <p class="over">Game over</p>
+          <p class="newRecord">New record!</p>
+          <button>Continue <img src="image/again.png" alt="" /></button>
+        </div>
+        <div class="infoEnd">
+          <p class="scoreOver">Your score: <span>20</span></p>
+          <p class="record">Your record score now: <span>20</span></p>
+          <p class="levelEnd">Your level: <span>5</span></p>
+        </div>
+      </div>
     </section>
     <script src="app.js"></script>
   </body>

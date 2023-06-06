@@ -61,6 +61,7 @@ button:hover{
     border: 1px solid rgb(166, 230, 255);
 }
 .optionContMain{
+    margin-top: -100vh;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -121,4 +122,101 @@ button:hover{
 .level{
     font-size: 25px;
     margin-bottom: 40px;
+}
+.game{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-top: -100vh;
+}
+.params{
+    width: 15vw;
+    height: 12vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #2e2a2a;
+    margin-bottom: 8px;
+    box-shadow: 0px 0px 50px 8px rgb(41, 40, 41);
+    z-index: 5;
+}
+.params p{
+    font-size: 25px;
+}
+.params span{
+    font-size: 45px;
+    margin-left: 10px;
+}
+canvas{
+    width: 50vw;
+    height: 75vh; 
+    background: rgb(36, 32, 32);
+    box-shadow: 0px 0px 28px 5px #727070;
+}
+.gameL{
+    font-size: 30px;
+    position: absolute;
+    right: 10vw;
+    top: 10vh;
+}
+.end{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.end span{
+    margin-left: 10px;
+}
+.endNews p{
+    margin-bottom: 50px;
+}
+.over{
+    font-size: 80px;
+}
+.newRecord{
+    font-size: 60px;
+}
+.infoEnd p{
+    font-size: 30px;
+    margin-bottom: 60px;
+}
+.end button{
+    width: 14vw;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 0;
+    border: 1px solid white;
+}
+.end button:hover{
+    color: rgb(166, 230, 255);
+    border: 1px solid rgb(166, 230, 255);
+}
+.info{
+    width: 100vw;
+    height: 50vh;
+    display: flex;
+    gap: 15vw;
+    justify-content: center;
+    align-items: center;
+}
+.endNews, .infoEnd{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.infoEnd{
+    padding-top: 80px;
+    height: 50vh;
+    align-items: flex-start;
+}
+.end img{
+    width: 30px;
+    height: 30px;
+    margin-top: 3px;
 }
