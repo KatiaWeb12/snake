@@ -19,7 +19,7 @@
       </header>
       <div class="mainStart">
         <p>Snake</p>
-        <button>Start</button>
+        <button class="next mainPage">Start</button>
       </div>
     </section>
     <section class="optionContMain">
@@ -40,7 +40,7 @@
             <div class="color"></div>
             <div class="color"></div>
             <div class="color"></div>
-            <div class="color"></div>
+            <div class="color last"><p>Random</p></div>
           </div>
         </div>
         <div class="options">
@@ -52,10 +52,12 @@
           </div>
         </div>
       </div>
-      <button>Start Game</button>
+      <button class="next startBut">Start Game</button>
     </section>
     <section class="game">
       <p class="level gameL">Level <span>15</span></p>
+      <p class="timer"><span>30</span>sec</p>
+      <button class="stop">Stop</button>
       <div class="params">
         <p class="score">Score: <span>9</span></p>
       </div>
@@ -66,7 +68,9 @@
         <div class="endNews">
           <p class="over">Game over</p>
           <p class="newRecord">New record!</p>
-          <button>Continue <img src="image/again.png" alt="" /></button>
+          <button class="return">
+            Continue <img src="image/again.png" alt="" />
+          </button>
         </div>
         <div class="infoEnd">
           <p class="scoreOver">Your score: <span>20</span></p>

@@ -31,10 +31,6 @@ section{
     width: 100vw;
     height: 100vh;
 }
-.start{
-    margin-top: -100vh;
-    display: block;
-}
 .mainStart{
     height: 90%;
     display: flex;
@@ -61,7 +57,6 @@ button:hover{
     border: 1px solid rgb(166, 230, 255);
 }
 .optionContMain{
-    margin-top: -100vh;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -88,6 +83,7 @@ button:hover{
     font-size: 35px;
 }
 .colorsCont{
+    position: relative;
     width: 400px;
     height: 380px;
     display: grid;
@@ -102,8 +98,21 @@ button:hover{
     height: 41px;
     cursor: pointer;
     border: 1px solid white;
-    background:rgb(210, 116, 247)
 }
+.color p{
+    display: none;
+    font-size: 20px;
+    position: absolute;
+    bottom: -75%;
+}
+.color:last-child{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    color: #ffffff;
+    background: linear-gradient(90deg, rgba(255,148,177,0.9920343137254902) 17%, rgba(208,92,243,1) 61%);
+}
+
 .musicCont{
     width: 400px;
     height: 380px;
@@ -129,7 +138,6 @@ button:hover{
     justify-content: center;
     align-items: center;
     position: relative;
-    margin-top: -100vh;
 }
 .params{
     width: 15vw;
@@ -159,15 +167,39 @@ canvas{
     font-size: 30px;
     position: absolute;
     right: 10vw;
-    top: 10vh;
+    top: 18vh;
+}
+.timer{
+    font-size: 30px;
+    position: absolute;
+    right: 10vw;
+    top: 28vh;
+}
+.stop{
+    width: 14vw;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 0;
+    border: 1px solid white;
+    position: absolute;
+    right: 6.5vw;
+    top: 38vh;
+}
+.timer span{
+    margin-right: 10px;
+    font-size: 35px;
 }
 .end{
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.end span{
+.level span{
     margin-left: 10px;
+    font-size: 35px;
 }
 .endNews p{
     margin-bottom: 50px;
@@ -219,4 +251,11 @@ canvas{
     width: 30px;
     height: 30px;
     margin-top: 3px;
+}
+.choose{
+    /* border: 3px solid white; */
+    box-shadow: 0px 0px 5px 8px rgb(61, 61, 61);
+}
+.chooseMusic{
+    box-shadow: 0px 0px 12px 8px rgb(61, 61, 61);
 }
